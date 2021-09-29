@@ -1,0 +1,8 @@
+{{#if user}}
+    <h1>Welcome {{user}}</h1>
+    <a href="/user/logout">Logout</a>
+{{/if}}
+{{#else}}
+<button><a href="/user/login">Login</a></button>
+<button><a href="/user/register">Register</a></button>
+{{/else}}
